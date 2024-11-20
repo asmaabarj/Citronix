@@ -1,4 +1,4 @@
 package com.projet.citronix.repositories;
 
-public class VenteRepository {
+public interface VenteRepository {
 }

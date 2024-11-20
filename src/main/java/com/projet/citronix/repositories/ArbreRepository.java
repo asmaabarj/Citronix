@@ -1,4 +1,4 @@
 package com.projet.citronix.repositories;
 
-public class ArbreRepository {
+public interface ArbreRepository {
 }

@@ -1,18 +1,13 @@
 package com.projet.citronix.models.entities;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.PositiveOrZero;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -24,19 +19,20 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Champ {
+public class DetailRecolte {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @NotNull(message = "La superficie est obligatoire")
-    @Min(value = 1000, message = "La superficie minimale est de 1000 m²")
-    private Double superficie;
+    @NotNull(message = "La quantité est obligatoire")
+    @PositiveOrZero(message = "La quantité doit être positive ou nulle")
+    private Double quantite;
     
     @ManyToOne
-    @JoinColumn(name = "ferme_id", nullable = false)
-    private Ferme ferme;
+    @JoinColumn(name = "arbre_id", nullable = false)
+    private Arbre arbre;
     
-    @OneToMany(mappedBy = "champ", cascade = CascadeType.ALL)
-    private List<Arbre> arbres = new ArrayList<>();
+    @ManyToOne
+    @JoinColumn(name = "recolte_id", nullable = false)
+    private Recolte recolte;
 }

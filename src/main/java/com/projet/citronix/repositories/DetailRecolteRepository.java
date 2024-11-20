@@ -1,4 +1,4 @@
 package com.projet.citronix.repositories;
 
-public interface FermeRepository {
+public interface DetailRecolteRepository {
 }
