@@ -1718,3 +1718,128 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 2024-11-21 15:13:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
 2024-11-21 15:13:33 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 1.022 seconds (JVM running for 1075.946)
 2024-11-21 15:13:33 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-11-21 15:18:55 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-21 15:18:55 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-21 15:18:55 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-11-21 15:18:55 [http-nio-8088-exec-2] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-21 15:18:55 [http-nio-8088-exec-2] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-21 15:18:55 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 15:18:55 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 15:18:55 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 15:18:55 [http-nio-8088-exec-2] ERROR c.p.c.e.GlobalExceptionHandler - Erreur Champ: La somme des superficies des champs doit être strictement inférieure à celle de la ferme
+2024-11-21 15:18:55 [http-nio-8088-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.projet.citronix.exceptions.ChampException$SuperficieTotaleException: La somme des superficies des champs doit être strictement inférieure à celle de la ferme]
+2024-11-21 15:30:07 [HikariPool-7 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=2m34s715ms690µs400ns).
+2024-11-21 15:49:17 [HikariPool-7 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=15m39s115ms295µs800ns).
+2024-11-21 15:55:00 [http-nio-8088-exec-4] INFO  c.p.c.controllers.FermeController - Création d'une nouvelle ferme
+2024-11-21 15:55:00 [http-nio-8088-exec-4] INFO  c.p.c.services.impl.FermeServiceImpl - Début création ferme: Ma Ferme
+2024-11-21 15:55:01 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ma Ferme]
+2024-11-21 15:55:01 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-21 15:55:01 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Montpellier]
+2024-11-21 15:55:01 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ma Ferme]
+2024-11-21 15:55:01 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [1.5]
+2024-11-21 15:55:01 [http-nio-8088-exec-4] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme créée avec succès, ID: 2
+2024-11-21 15:56:13 [http-nio-8088-exec-7] INFO  c.p.c.controllers.FermeController - Modification de la ferme avec l'ID: 2
+2024-11-21 15:56:13 [http-nio-8088-exec-7] INFO  c.p.c.services.impl.FermeServiceImpl - Début modification ferme ID: 2
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ma Ferme Modifiée]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme modifiée avec succès, ID: 2
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Toulouse]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ma Ferme Modifiée]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [2.0]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [BIGINT] - [2]
+2024-11-21 15:56:22 [http-nio-8088-exec-8] INFO  c.p.c.controllers.FermeController - Récupération de la ferme avec l'ID: 2
+2024-11-21 15:56:22 [http-nio-8088-exec-8] INFO  c.p.c.services.impl.FermeServiceImpl - Récupération ferme ID: 2
+2024-11-21 15:56:22 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:32 [http-nio-8088-exec-10] INFO  c.p.c.controllers.FermeController - Suppression de la ferme avec l'ID: 2
+2024-11-21 15:56:32 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.FermeServiceImpl - Suppression ferme ID: 2
+2024-11-21 15:56:32 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:32 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:32 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:32 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme supprimée avec succès, ID: 2
+2024-11-21 15:56:32 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:41 [http-nio-8088-exec-5] INFO  c.p.c.controllers.FermeController - Récupération de toutes les fermes
+2024-11-21 15:56:41 [http-nio-8088-exec-5] INFO  c.p.c.services.impl.FermeServiceImpl - Récupération de toutes les fermes
+2024-11-21 15:57:12 [http-nio-8088-exec-1] INFO  c.p.c.controllers.FermeController - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.0, superficieMax=5.0, page=0, size=10}
+2024-11-21 15:57:12 [http-nio-8088-exec-1] INFO  c.p.c.services.impl.FermeServiceImpl - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.0, superficieMax=5.0, page=0, size=10}
+2024-11-21 15:57:12 [http-nio-8088-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [%ferme%]
+2024-11-21 15:57:12 [http-nio-8088-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [%mont%]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] INFO  c.p.c.controllers.FermeController - Création d'une nouvelle ferme
+2024-11-21 16:18:24 [http-nio-8088-exec-3] INFO  c.p.c.services.impl.FermeServiceImpl - Début création ferme: Ferme du Mont
+2024-11-21 16:18:24 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ferme du Mont]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Montpellier]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ferme du Mont]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [2.5]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme créée avec succès, ID: 3
+2024-11-21 16:18:36 [http-nio-8088-exec-9] INFO  c.p.c.controllers.FermeController - Création d'une nouvelle ferme
+2024-11-21 16:18:36 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.FermeServiceImpl - Début création ferme: Ferme des Oliviers
+2024-11-21 16:18:36 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ferme des Oliviers]
+2024-11-21 16:18:36 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-21 16:18:36 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Montauban]
+2024-11-21 16:18:36 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ferme des Oliviers]
+2024-11-21 16:18:36 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [1.8]
+2024-11-21 16:18:36 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme créée avec succès, ID: 4
+2024-11-21 16:18:45 [http-nio-8088-exec-6] INFO  c.p.c.controllers.FermeController - Création d'une nouvelle ferme
+2024-11-21 16:18:45 [http-nio-8088-exec-6] INFO  c.p.c.services.impl.FermeServiceImpl - Début création ferme: Ferme Bio
+2024-11-21 16:18:45 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ferme Bio]
+2024-11-21 16:18:45 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-21 16:18:45 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Lyon]
+2024-11-21 16:18:45 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ferme Bio]
+2024-11-21 16:18:45 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [4.2]
+2024-11-21 16:18:45 [http-nio-8088-exec-6] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme créée avec succès, ID: 5
+2024-11-21 16:19:02 [http-nio-8088-exec-7] INFO  c.p.c.controllers.FermeController - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5, superficieMax=3.0, page=0, size=10}
+2024-11-21 16:19:02 [http-nio-8088-exec-7] INFO  c.p.c.services.impl.FermeServiceImpl - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5, superficieMax=3.0, page=0, size=10}
+2024-11-21 16:19:02 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [%ferme%]
+2024-11-21 16:19:02 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [%mont%]
+2024-11-21 16:19:52 [http-nio-8088-exec-8] INFO  c.p.c.controllers.FermeController - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5, page=0, size=10}
+2024-11-21 16:19:52 [http-nio-8088-exec-8] INFO  c.p.c.services.impl.FermeServiceImpl - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5, page=0, size=10}
+2024-11-21 16:19:52 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [%ferme%]
+2024-11-21 16:19:52 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [%mont%]
+2024-11-21 16:20:04 [http-nio-8088-exec-10] INFO  c.p.c.controllers.FermeController - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5}
+2024-11-21 16:20:04 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.FermeServiceImpl - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5}
+2024-11-21 16:20:04 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [%ferme%]
+2024-11-21 16:20:04 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [%mont%]
+2024-11-21 16:22:43 [http-nio-8088-exec-2] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-21 16:22:43 [http-nio-8088-exec-2] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-21 16:22:43 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:22:43 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:22:43 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:22:43 [http-nio-8088-exec-2] ERROR c.p.c.e.GlobalExceptionHandler - Erreur Champ: La somme des superficies des champs doit être strictement inférieure à celle de la ferme
+2024-11-21 16:22:43 [http-nio-8088-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.projet.citronix.exceptions.ChampException$SuperficieTotaleException: La somme des superficies des champs doit être strictement inférieure à celle de la ferme]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-21 16:22:52 [http-nio-8088-exec-3] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Champ Sud]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DOUBLE] - [0.5]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] INFO  c.p.c.services.impl.ChampServiceImpl - Champ créé avec succès - ID: 5
+2024-11-21 16:23:19 [http-nio-8088-exec-9] INFO  c.p.c.controllers.ChampController - Modification du champ avec l'ID: 3
+2024-11-21 16:23:19 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.ChampServiceImpl - Modification du champ - ID: 3
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:23:19 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.ChampServiceImpl - Champ modifié avec succès - ID: 3
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Champ Sud Modifié]
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DOUBLE] - [0.3]
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [3]
+2024-11-21 16:23:54 [http-nio-8088-exec-6] INFO  c.p.c.controllers.ChampController - Récupération du champ avec l'ID: 3
+2024-11-21 16:23:54 [http-nio-8088-exec-6] INFO  c.p.c.services.impl.ChampServiceImpl - Récupération du champ - ID: 3
+2024-11-21 16:23:54 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:23:57 [http-nio-8088-exec-7] INFO  c.p.c.controllers.ChampController - Récupération de tous les champs
+2024-11-21 16:23:57 [http-nio-8088-exec-7] INFO  c.p.c.services.impl.ChampServiceImpl - Récupération de tous les champs
+2024-11-21 16:23:57 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:23:57 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:24:31 [http-nio-8088-exec-8] INFO  c.p.c.controllers.ChampController - Récupération des champs pour la ferme avec l'ID: 1
+2024-11-21 16:24:31 [http-nio-8088-exec-8] INFO  c.p.c.services.impl.ChampServiceImpl - Récupération des champs de la ferme - ID: 1
+2024-11-21 16:24:31 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:24:31 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:25:13 [http-nio-8088-exec-10] INFO  c.p.c.controllers.ChampController - Suppression du champ avec l'ID: 1
+2024-11-21 16:25:13 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.ChampServiceImpl - Suppression du champ - ID: 1
+2024-11-21 16:25:13 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:25:13 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:25:13 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:25:13 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.ChampServiceImpl - Champ supprimé avec succès - ID: 1
+2024-11-21 16:25:13 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
