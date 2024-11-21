@@ -6,6 +6,7 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import com.projet.citronix.models.enums.Saison;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

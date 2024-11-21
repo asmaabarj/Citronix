@@ -1480,6 +1480,7 @@ Caused by: org.postgresql.util.PSQLException: ERREUR: la relation « champ » n'
 2024-11-21 14:57:20 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
 2024-11-21 14:57:20 [http-nio-8088-exec-6] ERROR c.p.c.e.GlobalExceptionHandler - Erreur Champ: La somme des superficies des champs doit être strictement inférieure à celle de la ferme
 2024-11-21 14:57:20 [http-nio-8088-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.projet.citronix.exceptions.ChampException$SuperficieTotaleException: La somme des superficies des champs doit être strictement inférieure à celle de la ferme]
+<<<<<<< HEAD
 2024-11-21 15:09:29 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 14 class path changes (0 additions, 11 deletions, 3 modifications)
 2024-11-21 15:09:29 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
 2024-11-21 15:09:29 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
@@ -1668,3 +1669,52 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
 	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:213)
 	... 24 common frames omitted
+=======
+>>>>>>> CIT-12-en-tant-que-utilisateur-je-veux-gerer-les-fermes-creer-consulter-modifier-supprimer-pour-optimiser-la-gestion-de-mes-proprietes
+2024-11-21 15:10:40 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 11072 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
+2024-11-21 15:10:40 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
+2024-11-21 15:10:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21 15:10:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2024-11-21 15:10:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-11-21 15:10:40 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-21 15:10:40 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-11-21 15:10:40 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-21 15:10:40 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 354 ms
+2024-11-21 15:10:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-11-21 15:10:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-11-21 15:10:41 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
+2024-11-21 15:10:41 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21 15:10:41 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-21 15:10:41 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-21 15:10:41 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 15:10:41 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-21 15:10:41 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-21 15:10:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-21 15:10:41 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 1.224 seconds (JVM running for 904.284)
+2024-11-21 15:10:41 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-11-21 15:13:32 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-11-21 15:13:32 [Thread-21] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-21 15:13:32 [Thread-21] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 15:13:32 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-11-21 15:13:32 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-11-21 15:13:32 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 11072 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
+2024-11-21 15:13:32 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
+2024-11-21 15:13:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21 15:13:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-11-21 15:13:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-11-21 15:13:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-21 15:13:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-11-21 15:13:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-21 15:13:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 313 ms
+2024-11-21 15:13:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2024-11-21 15:13:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2024-11-21 15:13:32 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
+2024-11-21 15:13:32 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21 15:13:32 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-21 15:13:33 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-21 15:13:33 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 15:13:33 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-21 15:13:33 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-21 15:13:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-21 15:13:33 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 1.022 seconds (JVM running for 1075.946)
+2024-11-21 15:13:33 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
