@@ -1,23 +1,14 @@
 package com.projet.citronix.models.entities;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+import javax.validation.constraints.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Data
@@ -28,15 +19,19 @@ public class Champ {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
+    @NotBlank(message = "Le nom du champ est obligatoire")
+    private String nom;
+
     @NotNull(message = "La superficie est obligatoire")
-    @Min(value = 1000, message = "La superficie minimale est de 1000 m²")
+    @DecimalMin(value = "0.1", message = "La superficie doit être supérieure ou égale à 0.1 hectare")
     private Double superficie;
-    
+
     @ManyToOne
     @JoinColumn(name = "ferme_id", nullable = false)
     private Ferme ferme;
-    
+
     @OneToMany(mappedBy = "champ", cascade = CascadeType.ALL)
+    @Builder.Default
     private List<Arbre> arbres = new ArrayList<>();
 }
