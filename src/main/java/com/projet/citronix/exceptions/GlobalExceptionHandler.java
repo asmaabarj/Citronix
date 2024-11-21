@@ -29,6 +29,13 @@ public class GlobalExceptionHandler {
         return createErrorResponse(ex.getMessage(), HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(ArbreException.class)
+    public ResponseEntity<ErrorResponse> handleArbreException(ArbreException ex) {
+        log.error("Erreur Arbre: {}", ex.getMessage());
+        return createErrorResponse(ex.getMessage(), HttpStatus.BAD_REQUEST);
+    }
+
+
     @ExceptionHandler(EntityNotFoundException.class)
     public ResponseEntity<ErrorResponse> handleEntityNotFoundException(EntityNotFoundException ex) {
         log.error("Entité non trouvée: {}", ex.getMessage());
@@ -52,6 +59,7 @@ public class GlobalExceptionHandler {
         log.error("Erreur inattendue: ", ex);
         return createErrorResponse("Une erreur interne est survenue", HttpStatus.INTERNAL_SERVER_ERROR);
     }
+
 
     private ResponseEntity<ErrorResponse> createErrorResponse(String message, HttpStatus status) {
         ErrorResponse errorResponse = new ErrorResponse(status.name(), message, LocalDateTime.now());
