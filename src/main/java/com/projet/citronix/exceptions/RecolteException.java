@@ -7,7 +7,7 @@ public class RecolteException extends RuntimeException {
 
     public static class RecolteExistantePourSaisonException extends RecolteException {
         public RecolteExistantePourSaisonException() {
-            super("Une récolte existe déjà pour cette saison");
+            super("Une récolte existe déjà pour cette saison cette année");
         }
     }
 
@@ -26,6 +26,18 @@ public class RecolteException extends RuntimeException {
     public static class SaisonInvalideException extends RecolteException {
         public SaisonInvalideException() {
             super("La saison spécifiée est invalide");
+        }
+    }
+
+    public static class SaisonDateIncompatibleException extends RecolteException {
+        public SaisonDateIncompatibleException() {
+            super("La date de récolte n'est pas compatible avec la saison sélectionnée");
+        }
+    }
+
+    public static class ArbreDejaRecolteException extends RecolteException {
+        public ArbreDejaRecolteException() {
+            super("Cet arbre a déjà été récolté pour cette saison cette année");
         }
     }
 } 

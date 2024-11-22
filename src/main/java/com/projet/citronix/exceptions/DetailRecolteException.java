@@ -34,4 +34,10 @@ public class DetailRecolteException extends RuntimeException {
             super("La quantité récoltée est invalide");
         }
     }
+
+    public static class ArbreDejaRecolteException extends DetailRecolteException {
+        public ArbreDejaRecolteException() {
+            super("Cet arbre a déjà été récolté pour cette saison cette année");
+        }
+    }
 } 

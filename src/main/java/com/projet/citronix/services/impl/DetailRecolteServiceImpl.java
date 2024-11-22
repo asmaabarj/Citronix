@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityNotFoundException;
+import java.util.Calendar;
 import java.util.List;
 
 @Service
@@ -130,8 +131,18 @@ public class DetailRecolteServiceImpl implements DetailRecolteService {
     }
 
     private void validerDetailRecolte(Arbre arbre, Recolte recolte) {
-        if (detailRecolteRepository.existsByArbreIdAndRecolteId(arbre.getId(), recolte.getId())) {
-            throw new DetailRecolteException("Un détail de récolte existe déjà pour cet arbre dans cette récolte");
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(recolte.getDateRecolte());
+        int anneeRecolte = cal.get(Calendar.YEAR);
+
+        boolean arbreDejaRecolte = detailRecolteRepository.existsByArbreIdAndRecolteSaisonAndAnneeRecolte(
+            arbre.getId(), 
+            recolte.getSaison(), 
+            anneeRecolte
+        );
+
+        if (arbreDejaRecolte) {
+            throw new DetailRecolteException.ArbreDejaRecolteException();
         }
     }
 } 

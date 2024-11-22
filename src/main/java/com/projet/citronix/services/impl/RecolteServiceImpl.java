@@ -16,7 +16,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.EntityNotFoundException;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -28,11 +29,58 @@ public class RecolteServiceImpl implements RecolteService {
     private final DetailRecolteRepository detailRecolteRepository;
     private final RecolteMapper recolteMapper;
 
+    private void validerSaisonDate(Date dateRecolte, Saison saison) {
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(dateRecolte);
+        int mois = cal.get(Calendar.MONTH) + 1; 
+
+        boolean compatible;
+        switch (saison) {
+            case PRINTEMPS:
+                compatible = mois >= 3 && mois <= 5;
+                break;
+            case ETE:
+                compatible = mois >= 6 && mois <= 8;
+                break;
+            case AUTOMNE:
+                compatible = mois >= 9 && mois <= 11;
+                break;
+            case HIVER:
+                compatible = mois == 12 || mois <= 2;
+                break;
+            default:
+                compatible = false;
+        }
+
+        if (!compatible) {
+            throw new RecolteException.SaisonDateIncompatibleException();
+        }
+    }
+
+    private void validerArbreNonRecolte(Long arbreId, Saison saison, Date dateRecolte) {
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(dateRecolte);
+        int anneeRecolte = cal.get(Calendar.YEAR);
+
+        boolean arbreDejaRecolte = detailRecolteRepository.existsByArbreIdAndRecolteSaisonAndAnnee(
+            arbreId, saison, anneeRecolte);
+
+        if (arbreDejaRecolte) {
+            throw new RecolteException.ArbreDejaRecolteException();
+        }
+    }
+
     @Override
     public RecolteDTO creer(RecolteDTO recolteDTO) {
         log.info("Création d'une nouvelle récolte pour la saison: {}", recolteDTO.getSaison());
         
-        if (recolteRepository.existsBySaison(recolteDTO.getSaison())) {
+        validerSaisonDate(recolteDTO.getDateRecolte(), recolteDTO.getSaison());
+        
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(recolteDTO.getDateRecolte());
+        int anneeRecolte = cal.get(Calendar.YEAR);
+        
+        if (recolteRepository.existsBySaisonAndAnnee(recolteDTO.getSaison(), anneeRecolte)) {
             throw new RecolteException.RecolteExistantePourSaisonException();
         }
         
