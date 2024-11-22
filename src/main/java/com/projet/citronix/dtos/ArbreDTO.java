@@ -24,4 +24,8 @@ public class ArbreDTO {
     
     @NotNull(message = "L'ID du champ est obligatoire")
     private Long champId;
+    
+    private Integer age;
+    private Float productiviteAnnuelle;
+    private String categorieArbre;
 }

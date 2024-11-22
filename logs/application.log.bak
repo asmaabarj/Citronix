@@ -2466,6 +2466,258 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:213)
 	... 24 common frames omitted
 =======
+<<<<<<<< HEAD:logs/application.log.bak
+>>>>>>> CIT-12-en-tant-que-utilisateur-je-veux-gerer-les-fermes-creer-consulter-modifier-supprimer-pour-optimiser-la-gestion-de-mes-proprietes
+2024-11-21 15:10:40 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 11072 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
+2024-11-21 15:10:40 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
+2024-11-21 15:10:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21 15:10:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2024-11-21 15:10:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-11-21 15:10:40 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-21 15:10:40 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-11-21 15:10:40 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-21 15:10:40 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 354 ms
+2024-11-21 15:10:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-11-21 15:10:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-11-21 15:10:41 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
+2024-11-21 15:10:41 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21 15:10:41 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-21 15:10:41 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-21 15:10:41 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 15:10:41 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-21 15:10:41 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-21 15:10:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-21 15:10:41 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 1.224 seconds (JVM running for 904.284)
+2024-11-21 15:10:41 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-11-21 15:13:32 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-11-21 15:13:32 [Thread-21] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-21 15:13:32 [Thread-21] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 15:13:32 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-11-21 15:13:32 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-11-21 15:13:32 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 11072 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
+2024-11-21 15:13:32 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
+2024-11-21 15:13:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21 15:13:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-11-21 15:13:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-11-21 15:13:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-21 15:13:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-11-21 15:13:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-21 15:13:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 313 ms
+2024-11-21 15:13:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2024-11-21 15:13:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2024-11-21 15:13:32 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
+2024-11-21 15:13:32 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21 15:13:32 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-21 15:13:33 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-21 15:13:33 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 15:13:33 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-21 15:13:33 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-21 15:13:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-21 15:13:33 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 1.022 seconds (JVM running for 1075.946)
+2024-11-21 15:13:33 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-11-21 15:18:55 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-21 15:18:55 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-21 15:18:55 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-11-21 15:18:55 [http-nio-8088-exec-2] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-21 15:18:55 [http-nio-8088-exec-2] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-21 15:18:55 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 15:18:55 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 15:18:55 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 15:18:55 [http-nio-8088-exec-2] ERROR c.p.c.e.GlobalExceptionHandler - Erreur Champ: La somme des superficies des champs doit être strictement inférieure à celle de la ferme
+2024-11-21 15:18:55 [http-nio-8088-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.projet.citronix.exceptions.ChampException$SuperficieTotaleException: La somme des superficies des champs doit être strictement inférieure à celle de la ferme]
+2024-11-21 15:30:07 [HikariPool-7 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=2m34s715ms690µs400ns).
+2024-11-21 15:49:17 [HikariPool-7 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=15m39s115ms295µs800ns).
+2024-11-21 15:55:00 [http-nio-8088-exec-4] INFO  c.p.c.controllers.FermeController - Création d'une nouvelle ferme
+2024-11-21 15:55:00 [http-nio-8088-exec-4] INFO  c.p.c.services.impl.FermeServiceImpl - Début création ferme: Ma Ferme
+2024-11-21 15:55:01 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ma Ferme]
+2024-11-21 15:55:01 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-21 15:55:01 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Montpellier]
+2024-11-21 15:55:01 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ma Ferme]
+2024-11-21 15:55:01 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [1.5]
+2024-11-21 15:55:01 [http-nio-8088-exec-4] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme créée avec succès, ID: 2
+2024-11-21 15:56:13 [http-nio-8088-exec-7] INFO  c.p.c.controllers.FermeController - Modification de la ferme avec l'ID: 2
+2024-11-21 15:56:13 [http-nio-8088-exec-7] INFO  c.p.c.services.impl.FermeServiceImpl - Début modification ferme ID: 2
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ma Ferme Modifiée]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme modifiée avec succès, ID: 2
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Toulouse]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ma Ferme Modifiée]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [2.0]
+2024-11-21 15:56:13 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [BIGINT] - [2]
+2024-11-21 15:56:22 [http-nio-8088-exec-8] INFO  c.p.c.controllers.FermeController - Récupération de la ferme avec l'ID: 2
+2024-11-21 15:56:22 [http-nio-8088-exec-8] INFO  c.p.c.services.impl.FermeServiceImpl - Récupération ferme ID: 2
+2024-11-21 15:56:22 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:32 [http-nio-8088-exec-10] INFO  c.p.c.controllers.FermeController - Suppression de la ferme avec l'ID: 2
+2024-11-21 15:56:32 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.FermeServiceImpl - Suppression ferme ID: 2
+2024-11-21 15:56:32 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:32 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:32 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:32 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme supprimée avec succès, ID: 2
+2024-11-21 15:56:32 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-21 15:56:41 [http-nio-8088-exec-5] INFO  c.p.c.controllers.FermeController - Récupération de toutes les fermes
+2024-11-21 15:56:41 [http-nio-8088-exec-5] INFO  c.p.c.services.impl.FermeServiceImpl - Récupération de toutes les fermes
+2024-11-21 15:57:12 [http-nio-8088-exec-1] INFO  c.p.c.controllers.FermeController - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.0, superficieMax=5.0, page=0, size=10}
+2024-11-21 15:57:12 [http-nio-8088-exec-1] INFO  c.p.c.services.impl.FermeServiceImpl - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.0, superficieMax=5.0, page=0, size=10}
+2024-11-21 15:57:12 [http-nio-8088-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [%ferme%]
+2024-11-21 15:57:12 [http-nio-8088-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [%mont%]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] INFO  c.p.c.controllers.FermeController - Création d'une nouvelle ferme
+2024-11-21 16:18:24 [http-nio-8088-exec-3] INFO  c.p.c.services.impl.FermeServiceImpl - Début création ferme: Ferme du Mont
+2024-11-21 16:18:24 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ferme du Mont]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Montpellier]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ferme du Mont]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [2.5]
+2024-11-21 16:18:24 [http-nio-8088-exec-3] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme créée avec succès, ID: 3
+2024-11-21 16:18:36 [http-nio-8088-exec-9] INFO  c.p.c.controllers.FermeController - Création d'une nouvelle ferme
+2024-11-21 16:18:36 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.FermeServiceImpl - Début création ferme: Ferme des Oliviers
+2024-11-21 16:18:36 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ferme des Oliviers]
+2024-11-21 16:18:36 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-21 16:18:36 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Montauban]
+2024-11-21 16:18:36 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ferme des Oliviers]
+2024-11-21 16:18:36 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [1.8]
+2024-11-21 16:18:36 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme créée avec succès, ID: 4
+2024-11-21 16:18:45 [http-nio-8088-exec-6] INFO  c.p.c.controllers.FermeController - Création d'une nouvelle ferme
+2024-11-21 16:18:45 [http-nio-8088-exec-6] INFO  c.p.c.services.impl.FermeServiceImpl - Début création ferme: Ferme Bio
+2024-11-21 16:18:45 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ferme Bio]
+2024-11-21 16:18:45 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-21 16:18:45 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Lyon]
+2024-11-21 16:18:45 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ferme Bio]
+2024-11-21 16:18:45 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [4.2]
+2024-11-21 16:18:45 [http-nio-8088-exec-6] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme créée avec succès, ID: 5
+2024-11-21 16:19:02 [http-nio-8088-exec-7] INFO  c.p.c.controllers.FermeController - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5, superficieMax=3.0, page=0, size=10}
+2024-11-21 16:19:02 [http-nio-8088-exec-7] INFO  c.p.c.services.impl.FermeServiceImpl - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5, superficieMax=3.0, page=0, size=10}
+2024-11-21 16:19:02 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [%ferme%]
+2024-11-21 16:19:02 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [%mont%]
+2024-11-21 16:19:52 [http-nio-8088-exec-8] INFO  c.p.c.controllers.FermeController - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5, page=0, size=10}
+2024-11-21 16:19:52 [http-nio-8088-exec-8] INFO  c.p.c.services.impl.FermeServiceImpl - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5, page=0, size=10}
+2024-11-21 16:19:52 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [%ferme%]
+2024-11-21 16:19:52 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [%mont%]
+2024-11-21 16:20:04 [http-nio-8088-exec-10] INFO  c.p.c.controllers.FermeController - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5}
+2024-11-21 16:20:04 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.FermeServiceImpl - Recherche des fermes avec critères: {nom=Ferme, localisation=Mont, superficieMin=1.5}
+2024-11-21 16:20:04 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [%ferme%]
+2024-11-21 16:20:04 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [%mont%]
+2024-11-21 16:22:43 [http-nio-8088-exec-2] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-21 16:22:43 [http-nio-8088-exec-2] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-21 16:22:43 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:22:43 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:22:43 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:22:43 [http-nio-8088-exec-2] ERROR c.p.c.e.GlobalExceptionHandler - Erreur Champ: La somme des superficies des champs doit être strictement inférieure à celle de la ferme
+2024-11-21 16:22:43 [http-nio-8088-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.projet.citronix.exceptions.ChampException$SuperficieTotaleException: La somme des superficies des champs doit être strictement inférieure à celle de la ferme]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-21 16:22:52 [http-nio-8088-exec-3] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Champ Sud]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DOUBLE] - [0.5]
+2024-11-21 16:22:52 [http-nio-8088-exec-3] INFO  c.p.c.services.impl.ChampServiceImpl - Champ créé avec succès - ID: 5
+2024-11-21 16:23:19 [http-nio-8088-exec-9] INFO  c.p.c.controllers.ChampController - Modification du champ avec l'ID: 3
+2024-11-21 16:23:19 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.ChampServiceImpl - Modification du champ - ID: 3
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:23:19 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.ChampServiceImpl - Champ modifié avec succès - ID: 3
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Champ Sud Modifié]
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DOUBLE] - [0.3]
+2024-11-21 16:23:19 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [3]
+2024-11-21 16:23:54 [http-nio-8088-exec-6] INFO  c.p.c.controllers.ChampController - Récupération du champ avec l'ID: 3
+2024-11-21 16:23:54 [http-nio-8088-exec-6] INFO  c.p.c.services.impl.ChampServiceImpl - Récupération du champ - ID: 3
+2024-11-21 16:23:54 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:23:57 [http-nio-8088-exec-7] INFO  c.p.c.controllers.ChampController - Récupération de tous les champs
+2024-11-21 16:23:57 [http-nio-8088-exec-7] INFO  c.p.c.services.impl.ChampServiceImpl - Récupération de tous les champs
+2024-11-21 16:23:57 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:23:57 [http-nio-8088-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-21 16:24:31 [http-nio-8088-exec-8] INFO  c.p.c.controllers.ChampController - Récupération des champs pour la ferme avec l'ID: 1
+2024-11-21 16:24:31 [http-nio-8088-exec-8] INFO  c.p.c.services.impl.ChampServiceImpl - Récupération des champs de la ferme - ID: 1
+2024-11-21 16:24:31 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:24:31 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:25:13 [http-nio-8088-exec-10] INFO  c.p.c.controllers.ChampController - Suppression du champ avec l'ID: 1
+2024-11-21 16:25:13 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.ChampServiceImpl - Suppression du champ - ID: 1
+2024-11-21 16:25:13 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:25:13 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:25:13 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:25:13 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.ChampServiceImpl - Champ supprimé avec succès - ID: 1
+2024-11-21 16:25:13 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-21 16:28:28 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 49 class path changes (0 additions, 25 deletions, 24 modifications)
+2024-11-21 16:28:28 [Thread-25] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-21 16:28:28 [Thread-25] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-21 16:28:28 [Thread-25] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 16:28:28 [Thread-25] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2024-11-21 16:28:28 [Thread-25] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2024-11-21 16:28:28 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 11072 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
+2024-11-21 16:28:28 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
+2024-11-21 16:28:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21 16:28:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2024-11-21 16:28:29 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-11-21 16:28:29 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-21 16:28:29 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-11-21 16:28:29 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-21 16:28:29 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1162 ms
+2024-11-21 16:28:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2024-11-21 16:28:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2024-11-21 16:28:29 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
+2024-11-21 16:28:30 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21 16:28:30 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-21 16:28:30 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-21 16:28:30 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 16:28:30 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'champMapperImpl' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\mapper\ChampMapperImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.projet.citronix.mapper.ChampMapperImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	ChampMapper cannot be resolved to a type
+	The method toDto(Champ) of type ChampMapperImpl must override or implement a supertype method
+	ChampDTO.ChampDTOBuilder cannot be resolved to a type
+	The method builder() is undefined for the type ChampDTO
+	The method getId() is undefined for the type Champ
+	The method getNom() is undefined for the type Champ
+	The method getSuperficie() is undefined for the type Champ
+	The method toEntity(ChampDTO) of type ChampMapperImpl must override or implement a supertype method
+	Champ.ChampBuilder cannot be resolved to a type
+	The method builder() is undefined for the type Champ
+	The method getId() is undefined for the type ChampDTO
+	The method getNom() is undefined for the type ChampDTO
+	The method getSuperficie() is undefined for the type ChampDTO
+	The method toDtoList(List<Champ>) of type ChampMapperImpl must override or implement a supertype method
+	The method toEntityList(List<ChampDTO>) of type ChampMapperImpl must override or implement a supertype method
+	The method getFerme() is undefined for the type Champ
+	The method getId() is undefined for the type Ferme
+	Ferme.FermeBuilder cannot be resolved to a type
+	The method builder() is undefined for the type Ferme
+	The method getFermeId() is undefined for the type ChampDTO
+
+2024-11-21 16:28:30 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 16:28:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2024-11-21 16:28:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2024-11-21 16:28:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-21 16:28:30 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-11-21 16:28:30 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'champMapperImpl' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\mapper\ChampMapperImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.projet.citronix.mapper.ChampMapperImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	ChampMapper cannot be resolved to a type
+	The method toDto(Champ) of type ChampMapperImpl must override or implement a supertype method
+	ChampDTO.ChampDTOBuilder cannot be resolved to a type
+	The method builder() is undefined for the type ChampDTO
+	The method getId() is undefined for the type Champ
+	The method getNom() is undefined for the type Champ
+	The method getSuperficie() is undefined for the type Champ
+	The method toEntity(ChampDTO) of type ChampMapperImpl must override or implement a supertype method
+	Champ.ChampBuilder cannot be resolved to a type
+	The method builder() is undefined for the type Champ
+	The method getId() is undefined for the type ChampDTO
+	The method getNom() is undefined for the type ChampDTO
+	The method getSuperficie() is undefined for the type ChampDTO
+	The method toDtoList(List<Champ>) of type ChampMapperImpl must override or implement a supertype method
+	The method toEntityList(List<ChampDTO>) of type ChampMapperImpl must override or implement a supertype method
+	The method getFerme() is undefined for the type Champ
+	The method getId() is undefined for the type Ferme
+	Ferme.FermeBuilder cannot be resolved to a type
+	The method builder() is undefined for the type Ferme
+	The method getFermeId() is undefined for the type ChampDTO
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+========
 >>>>>>> cffed2d11481700a6cab9a6e627decd1c4ab38f5
 2024-11-22 10:29:18 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 16848 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
 2024-11-22 10:29:18 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
@@ -2520,13 +2772,19 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+>>>>>>>> CIT-31-en-tant-que-utilisateur-je-veux-gerer-les-recoltes-par-saison-pour-analyser-la-production-au-fil-du-temps:logs/application.log
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+<<<<<<<< HEAD:logs/application.log.bak
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
+========
 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168)
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:919)
+>>>>>>>> CIT-31-en-tant-que-utilisateur-je-veux-gerer-les-recoltes-par-saison-pour-analyser-la-production-au-fil-du-temps:logs/application.log
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
@@ -2540,6 +2798,57 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+<<<<<<<< HEAD:logs/application.log.bak
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.projet.citronix.mapper.ChampMapperImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	ChampMapper cannot be resolved to a type
+	The method toDto(Champ) of type ChampMapperImpl must override or implement a supertype method
+	ChampDTO.ChampDTOBuilder cannot be resolved to a type
+	The method builder() is undefined for the type ChampDTO
+	The method getId() is undefined for the type Champ
+	The method getNom() is undefined for the type Champ
+	The method getSuperficie() is undefined for the type Champ
+	The method toEntity(ChampDTO) of type ChampMapperImpl must override or implement a supertype method
+	Champ.ChampBuilder cannot be resolved to a type
+	The method builder() is undefined for the type Champ
+	The method getId() is undefined for the type ChampDTO
+	The method getNom() is undefined for the type ChampDTO
+	The method getSuperficie() is undefined for the type ChampDTO
+	The method toDtoList(List<Champ>) of type ChampMapperImpl must override or implement a supertype method
+	The method toEntityList(List<ChampDTO>) of type ChampMapperImpl must override or implement a supertype method
+	The method getFerme() is undefined for the type Champ
+	The method getId() is undefined for the type Ferme
+	Ferme.FermeBuilder cannot be resolved to a type
+	The method builder() is undefined for the type Ferme
+	The method getFermeId() is undefined for the type ChampDTO
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:226)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	ChampMapper cannot be resolved to a type
+	The method toDto(Champ) of type ChampMapperImpl must override or implement a supertype method
+	ChampDTO.ChampDTOBuilder cannot be resolved to a type
+	The method builder() is undefined for the type ChampDTO
+	The method getId() is undefined for the type Champ
+	The method getNom() is undefined for the type Champ
+	The method getSuperficie() is undefined for the type Champ
+	The method toEntity(ChampDTO) of type ChampMapperImpl must override or implement a supertype method
+	Champ.ChampBuilder cannot be resolved to a type
+	The method builder() is undefined for the type Champ
+	The method getId() is undefined for the type ChampDTO
+	The method getNom() is undefined for the type ChampDTO
+	The method getSuperficie() is undefined for the type ChampDTO
+	The method toDtoList(List<Champ>) of type ChampMapperImpl must override or implement a supertype method
+	The method toEntityList(List<ChampDTO>) of type ChampMapperImpl must override or implement a supertype method
+	The method getFerme() is undefined for the type Champ
+	The method getId() is undefined for the type Ferme
+	Ferme.FermeBuilder cannot be resolved to a type
+	The method builder() is undefined for the type Ferme
+	The method getFermeId() is undefined for the type ChampDTO
+
+	at com.projet.citronix.mapper.ChampMapperImpl.<init>(ChampMapperImpl.java:17)
+========
 Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
@@ -2565,11 +2874,16 @@ Caused by: org.hibernate.InstantiationException: could not instantiate test obje
 	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:142)
 	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:613)
 	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:126)
+>>>>>>>> CIT-31-en-tant-que-utilisateur-je-veux-gerer-les-recoltes-par-saison-pour-analyser-la-production-au-fil-du-temps:logs/application.log
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<<<<<<<< HEAD:logs/application.log.bak
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:213)
+	... 24 common frames omitted
+========
 	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:96)
 	... 33 common frames omitted
 Caused by: java.lang.reflect.InvocationTargetException: null
@@ -6078,920 +6392,4 @@ Consider defining a bean of type 'com.projet.citronix.services.interfaces.Recolt
 2024-11-22 19:37:20 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m13s126ms979µs900ns).
 2024-11-22 19:59:45 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m54s371ms847µs100ns).
 2024-11-22 20:59:05 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s133ms530µs400ns).
-2024-11-22 21:00:51 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 29 class path changes (0 additions, 21 deletions, 8 modifications)
-2024-11-22 21:00:51 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:00:51 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:00:51 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
-2024-11-22 21:00:51 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:00:51 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:00:51 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:00:51 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-11-22 21:00:51 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-11-22 21:00:51 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:00:51 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:00:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:00:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
-2024-11-22 21:00:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:00:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:00:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:00:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:00:52 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:00:52 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 532 ms
-2024-11-22 21:00:52 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2024-11-22 21:00:52 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2024-11-22 21:00:52 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:00:52 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:00:52 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:00:52 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:00:52 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:00:52 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'recolteController' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\controllers\RecolteController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'recolteServiceImpl': Resolution of declared constructors on bean Class [com.projet.citronix.services.impl.RecolteServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@44bb9205] failed; nested exception is java.lang.NoClassDefFoundError: RecolteMapper
-2024-11-22 21:00:52 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:00:52 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-2024-11-22 21:00:52 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-2024-11-22 21:00:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:00:52 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-11-22 21:00:52 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'recolteController' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\controllers\RecolteController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'recolteServiceImpl': Resolution of declared constructors on bean Class [com.projet.citronix.services.impl.RecolteServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@44bb9205] failed; nested exception is java.lang.NoClassDefFoundError: RecolteMapper
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
-	at com.projet.citronix.CitronixApplication.main(CitronixApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'recolteServiceImpl': Resolution of declared constructors on bean Class [com.projet.citronix.services.impl.RecolteServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@44bb9205] failed; nested exception is java.lang.NoClassDefFoundError: RecolteMapper
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
-	... 24 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: RecolteMapper
-	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
-	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373)
-	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:313)
-	... 37 common frames omitted
-Caused by: java.lang.ClassNotFoundException: RecolteMapper
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:467)
-	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
-	... 41 common frames omitted
-2024-11-22 21:00:56 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:00:56 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:00:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:00:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
-2024-11-22 21:00:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:00:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:00:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:00:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:00:57 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:00:57 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 686 ms
-2024-11-22 21:00:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-2024-11-22 21:00:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-2024-11-22 21:00:57 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:00:57 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:00:57 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:00:57 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
-    alter table detail_recolte 
-       add column quantite float8 not null" via JDBC Statement
-org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
-    alter table detail_recolte 
-       add column quantite float8 not null" via JDBC Statement
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:602)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:314)
-	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:919)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
-	at com.projet.citronix.CitronixApplication.main(CitronixApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.postgresql.util.PSQLException: ERREUR: la colonne « quantite » de la table « detail_recolte » contient des valeurs NULL
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
-	... 39 common frames omitted
-2024-11-22 21:00:57 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:00:57 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:00:58 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'detailRecolteMapperImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.projet.citronix.mapper.DetailRecolteMapperImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@79f276b7]
-2024-11-22 21:00:58 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:00:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-2024-11-22 21:00:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-2024-11-22 21:00:58 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:00:58 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-11-22 21:00:58 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'detailRecolteMapperImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.projet.citronix.mapper.DetailRecolteMapperImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@79f276b7]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:298)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
-	at com.projet.citronix.CitronixApplication.main(CitronixApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.projet.citronix.mapper.DetailRecolteMapperImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@79f276b7]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
-	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:276)
-	... 23 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: DetailRecolteDTO
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
-	... 25 common frames omitted
-Caused by: java.lang.ClassNotFoundException: DetailRecolteDTO
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:467)
-	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
-	... 29 common frames omitted
-2024-11-22 21:01:00 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:01:00 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:01:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:01:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
-2024-11-22 21:01:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:01:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:01:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:01:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:01:01 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:01:01 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 756 ms
-2024-11-22 21:01:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
-2024-11-22 21:01:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
-2024-11-22 21:01:01 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:01:01 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:01:01 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:01:01 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
-    alter table detail_recolte 
-       add column quantite float8 not null" via JDBC Statement
-org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
-    alter table detail_recolte 
-       add column quantite float8 not null" via JDBC Statement
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:602)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:314)
-	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:919)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
-	at com.projet.citronix.CitronixApplication.main(CitronixApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.postgresql.util.PSQLException: ERREUR: la colonne « quantite » de la table « detail_recolte » contient des valeurs NULL
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
-	... 39 common frames omitted
-2024-11-22 21:01:02 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:01:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:01:02 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'detailRecolteMapperImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.projet.citronix.mapper.DetailRecolteMapperImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1e766831]
-2024-11-22 21:01:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:01:02 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
-2024-11-22 21:01:02 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
-2024-11-22 21:01:02 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:01:02 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-11-22 21:01:02 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'detailRecolteMapperImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.projet.citronix.mapper.DetailRecolteMapperImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1e766831]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:298)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
-	at com.projet.citronix.CitronixApplication.main(CitronixApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.projet.citronix.mapper.DetailRecolteMapperImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1e766831]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
-	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:276)
-	... 23 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: DetailRecolteDTO
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
-	... 25 common frames omitted
-Caused by: java.lang.ClassNotFoundException: DetailRecolteDTO
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:467)
-	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
-	... 29 common frames omitted
-2024-11-22 21:02:41 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:02:41 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:02:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:02:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
-2024-11-22 21:02:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:02:42 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:02:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:02:42 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:02:42 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:02:42 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 502 ms
-2024-11-22 21:02:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
-2024-11-22 21:02:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
-2024-11-22 21:02:42 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:02:42 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:02:42 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:02:42 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
-    alter table detail_recolte 
-       add column quantite float8 not null" via JDBC Statement
-org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
-    alter table detail_recolte 
-       add column quantite float8 not null" via JDBC Statement
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:602)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:314)
-	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:919)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
-	at com.projet.citronix.CitronixApplication.main(CitronixApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.postgresql.util.PSQLException: ERREUR: la colonne « quantite » de la table « detail_recolte » contient des valeurs NULL
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
-	... 39 common frames omitted
-2024-11-22 21:02:42 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:02:42 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:02:42 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'detailRecolteController' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\controllers\DetailRecolteController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'detailRecolteServiceImpl' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\services\impl\DetailRecolteServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.projet.citronix.repositories.DetailRecolteRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2024-11-22 21:02:42 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:02:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
-2024-11-22 21:02:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
-2024-11-22 21:02:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:02:42 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-11-22 21:02:42 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.projet.citronix.services.impl.DetailRecolteServiceImpl required a bean of type 'com.projet.citronix.repositories.DetailRecolteRepository' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.projet.citronix.repositories.DetailRecolteRepository' in your configuration.
-
-2024-11-22 21:05:18 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:05:18 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:05:19 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:05:19 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
-2024-11-22 21:05:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:05:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:05:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:05:19 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:05:19 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:05:19 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 433 ms
-2024-11-22 21:05:19 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
-2024-11-22 21:05:19 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
-2024-11-22 21:05:19 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:05:19 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:05:19 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:05:19 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
-    alter table detail_recolte 
-       add column quantite float8 not null" via JDBC Statement
-org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
-    alter table detail_recolte 
-       add column quantite float8 not null" via JDBC Statement
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:602)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:314)
-	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:919)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
-	at com.projet.citronix.CitronixApplication.main(CitronixApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.postgresql.util.PSQLException: ERREUR: la colonne « quantite » de la table « detail_recolte » contient des valeurs NULL
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
-	... 39 common frames omitted
-2024-11-22 21:05:19 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:05:19 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:05:19 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'detailRecolteController' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\controllers\DetailRecolteController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'detailRecolteServiceImpl' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\services\impl\DetailRecolteServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.projet.citronix.repositories.DetailRecolteRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2024-11-22 21:05:19 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:05:19 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
-2024-11-22 21:05:19 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
-2024-11-22 21:05:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:05:19 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-11-22 21:05:19 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.projet.citronix.services.impl.DetailRecolteServiceImpl required a bean of type 'com.projet.citronix.repositories.DetailRecolteRepository' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.projet.citronix.repositories.DetailRecolteRepository' in your configuration.
-
-2024-11-22 21:07:47 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:07:47 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:07:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:07:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
-2024-11-22 21:07:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:07:48 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:07:48 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:07:48 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:07:48 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:07:48 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 752 ms
-2024-11-22 21:07:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
-2024-11-22 21:07:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
-2024-11-22 21:07:48 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:07:48 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:07:48 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:07:48 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:07:48 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:07:49 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22 21:07:49 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-11-22 21:07:49 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:07:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
-2024-11-22 21:07:49 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 2.023 seconds (JVM running for 14668.102)
-2024-11-22 21:07:49 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2024-11-22 21:07:50 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 99 class path changes (0 additions, 0 deletions, 99 modifications)
-2024-11-22 21:07:50 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:07:50 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:07:50 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:07:50 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:07:50 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:07:50 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
-2024-11-22 21:07:50 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
-2024-11-22 21:07:50 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:07:50 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:07:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:07:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 5 JPA repository interfaces.
-2024-11-22 21:07:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:07:51 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:07:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:07:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:07:51 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:07:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 414 ms
-2024-11-22 21:07:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
-2024-11-22 21:07:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
-2024-11-22 21:07:51 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:07:51 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:07:51 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:07:51 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:07:51 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:07:52 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22 21:07:52 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-11-22 21:07:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:07:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
-2024-11-22 21:07:52 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 1.556 seconds (JVM running for 14671.164)
-2024-11-22 21:07:52 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2024-11-22 21:08:15 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-22 21:08:15 [Thread-26] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:08:15 [Thread-26] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:08:15 [Thread-26] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:08:15 [Thread-26] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:08:15 [Thread-26] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:08:15 [Thread-26] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
-2024-11-22 21:08:15 [Thread-26] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
-2024-11-22 21:08:15 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:08:15 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:08:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:08:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 5 JPA repository interfaces.
-2024-11-22 21:08:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:08:16 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:08:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:08:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:08:16 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:08:16 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 367 ms
-2024-11-22 21:08:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
-2024-11-22 21:08:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
-2024-11-22 21:08:16 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:08:16 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:08:16 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:08:16 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:08:16 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:08:16 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22 21:08:17 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-11-22 21:08:17 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:08:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
-2024-11-22 21:08:17 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 1.276 seconds (JVM running for 14695.865)
-2024-11-22 21:08:17 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2024-11-22 21:09:11 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
-2024-11-22 21:09:11 [Thread-30] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:09:11 [Thread-30] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:09:11 [Thread-30] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:09:11 [Thread-30] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:09:11 [Thread-30] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:09:11 [Thread-30] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
-2024-11-22 21:09:11 [Thread-30] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
-2024-11-22 21:09:11 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:09:11 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:09:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:09:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 5 JPA repository interfaces.
-2024-11-22 21:09:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:09:11 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:09:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:09:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:09:11 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:09:11 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 327 ms
-2024-11-22 21:09:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
-2024-11-22 21:09:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
-2024-11-22 21:09:11 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:09:11 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:09:11 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:09:12 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:09:12 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:09:12 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22 21:09:12 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-11-22 21:09:12 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:09:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
-2024-11-22 21:09:12 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 1.219 seconds (JVM running for 14751.289)
-2024-11-22 21:09:12 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2024-11-22 21:20:57 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 54 class path changes (0 additions, 43 deletions, 11 modifications)
-2024-11-22 21:20:57 [Thread-34] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:20:57 [Thread-34] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:20:57 [Thread-34] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:20:57 [Thread-34] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:20:57 [Thread-34] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:20:57 [Thread-34] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
-2024-11-22 21:20:57 [Thread-34] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
-2024-11-22 21:20:58 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:20:58 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:20:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:20:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 5 JPA repository interfaces.
-2024-11-22 21:20:58 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:20:58 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:20:58 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:20:58 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:20:58 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:20:58 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 393 ms
-2024-11-22 21:20:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
-2024-11-22 21:20:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
-2024-11-22 21:20:58 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:20:58 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:20:58 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:20:58 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:20:58 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:20:58 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'arbreController' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\controllers\ArbreController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'arbreServiceImpl': Resolution of declared constructors on bean Class [com.projet.citronix.services.impl.ArbreServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@42691099] failed; nested exception is java.lang.NoClassDefFoundError: ArbreMapper
-2024-11-22 21:20:58 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:20:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
-2024-11-22 21:20:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
-2024-11-22 21:20:58 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:20:58 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-11-22 21:20:58 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'arbreController' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\controllers\ArbreController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'arbreServiceImpl': Resolution of declared constructors on bean Class [com.projet.citronix.services.impl.ArbreServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@42691099] failed; nested exception is java.lang.NoClassDefFoundError: ArbreMapper
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
-	at com.projet.citronix.CitronixApplication.main(CitronixApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'arbreServiceImpl': Resolution of declared constructors on bean Class [com.projet.citronix.services.impl.ArbreServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@42691099] failed; nested exception is java.lang.NoClassDefFoundError: ArbreMapper
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
-	... 24 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: ArbreMapper
-	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
-	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373)
-	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:313)
-	... 37 common frames omitted
-Caused by: java.lang.ClassNotFoundException: ArbreMapper
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:467)
-	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
-	... 41 common frames omitted
-2024-11-22 21:21:02 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 23348 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
-2024-11-22 21:21:02 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
-2024-11-22 21:21:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22 21:21:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
-2024-11-22 21:21:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2024-11-22 21:21:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
-2024-11-22 21:21:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-22 21:21:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
-2024-11-22 21:21:03 [restartedMain] INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-22 21:21:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 457 ms
-2024-11-22 21:21:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
-2024-11-22 21:21:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
-2024-11-22 21:21:03 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
-2024-11-22 21:21:03 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22 21:21:03 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2024-11-22 21:21:03 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
-    alter table detail_recolte 
-       add column quantite float8 not null" via JDBC Statement
-org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
-    alter table detail_recolte 
-       add column quantite float8 not null" via JDBC Statement
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:602)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:314)
-	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:919)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
-	at com.projet.citronix.CitronixApplication.main(CitronixApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.postgresql.util.PSQLException: ERREUR: la colonne « quantite » de la table « detail_recolte » contient des valeurs NULL
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
-	... 39 common frames omitted
-2024-11-22 21:21:03 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-11-22 21:21:03 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:21:03 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'arbreMapperImpl' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\mapper\ArbreMapperImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.projet.citronix.mapper.ArbreMapperImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	ArbreMapper cannot be resolved to a type
-	The method toDTO(Arbre) of type ArbreMapperImpl must override or implement a supertype method
-	The method calculerAge() is undefined for the type Arbre
-	The method calculerProductivite() is undefined for the type Arbre
-	The method determinerCategorie() is undefined for the type Arbre
-	The method toEntity(ArbreDTO) of type ArbreMapperImpl must override or implement a supertype method
-	The method toDTOList(List<Arbre>) of type ArbreMapperImpl must override or implement a supertype method
-
-2024-11-22 21:21:03 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22 21:21:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
-2024-11-22 21:21:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
-2024-11-22 21:21:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-11-22 21:21:03 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-11-22 21:21:03 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'arbreMapperImpl' defined in file [C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes\com\projet\citronix\mapper\ArbreMapperImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.projet.citronix.mapper.ArbreMapperImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	ArbreMapper cannot be resolved to a type
-	The method toDTO(Arbre) of type ArbreMapperImpl must override or implement a supertype method
-	The method calculerAge() is undefined for the type Arbre
-	The method calculerProductivite() is undefined for the type Arbre
-	The method determinerCategorie() is undefined for the type Arbre
-	The method toEntity(ArbreDTO) of type ArbreMapperImpl must override or implement a supertype method
-	The method toDTOList(List<Arbre>) of type ArbreMapperImpl must override or implement a supertype method
-
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
-	at com.projet.citronix.CitronixApplication.main(CitronixApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.projet.citronix.mapper.ArbreMapperImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	ArbreMapper cannot be resolved to a type
-	The method toDTO(Arbre) of type ArbreMapperImpl must override or implement a supertype method
-	The method calculerAge() is undefined for the type Arbre
-	The method calculerProductivite() is undefined for the type Arbre
-	The method determinerCategorie() is undefined for the type Arbre
-	The method toEntity(ArbreDTO) of type ArbreMapperImpl must override or implement a supertype method
-	The method toDTOList(List<Arbre>) of type ArbreMapperImpl must override or implement a supertype method
-
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:226)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
-	... 22 common frames omitted
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	ArbreMapper cannot be resolved to a type
-	The method toDTO(Arbre) of type ArbreMapperImpl must override or implement a supertype method
-	The method calculerAge() is undefined for the type Arbre
-	The method calculerProductivite() is undefined for the type Arbre
-	The method determinerCategorie() is undefined for the type Arbre
-	The method toEntity(ArbreDTO) of type ArbreMapperImpl must override or implement a supertype method
-	The method toDTOList(List<Arbre>) of type ArbreMapperImpl must override or implement a supertype method
-
-	at com.projet.citronix.mapper.ArbreMapperImpl.<init>(ArbreMapperImpl.java:17)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:213)
-	... 24 common frames omitted
+>>>>>>>> CIT-31-en-tant-que-utilisateur-je-veux-gerer-les-recoltes-par-saison-pour-analyser-la-production-au-fil-du-temps:logs/application.log
