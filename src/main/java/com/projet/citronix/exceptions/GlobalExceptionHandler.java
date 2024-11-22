@@ -1,6 +1,11 @@
 package com.projet.citronix.exceptions;
 
-import lombok.extern.slf4j.Slf4j;
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.persistence.EntityNotFoundException;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -8,10 +13,9 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import javax.persistence.EntityNotFoundException;
-import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Map;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 
 @RestControllerAdvice
 @Slf4j
@@ -34,7 +38,6 @@ public class GlobalExceptionHandler {
         log.error("Erreur Arbre: {}", ex.getMessage());
         return createErrorResponse(ex.getMessage(), HttpStatus.BAD_REQUEST);
     }
-
 
     @ExceptionHandler(EntityNotFoundException.class)
     public ResponseEntity<ErrorResponse> handleEntityNotFoundException(EntityNotFoundException ex) {
@@ -60,9 +63,20 @@ public class GlobalExceptionHandler {
         return createErrorResponse("Une erreur interne est survenue", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-
     private ResponseEntity<ErrorResponse> createErrorResponse(String message, HttpStatus status) {
-        ErrorResponse errorResponse = new ErrorResponse(status.name(), message, LocalDateTime.now());
-        return new ResponseEntity<>(errorResponse, status);
+        ErrorResponse error = new ErrorResponse(
+            status.value(),
+            message,
+            LocalDateTime.now()
+        );
+        return new ResponseEntity<>(error, status);
+    }
+
+    @Data
+    @AllArgsConstructor
+    public static class ErrorResponse {
+        private int status;
+        private String message;
+        private LocalDateTime timestamp;
     }
 } 

@@ -46,4 +46,10 @@ public abstract class ArbreException extends RuntimeException {
             super("Le champ d'appartenance est obligatoire");
         }
     }
+
+    public static class DatePlantationFutureException extends ArbreException {
+        public DatePlantationFutureException() {
+            super("La date de plantation doit être dans le passé");
+        }
+    }
 }

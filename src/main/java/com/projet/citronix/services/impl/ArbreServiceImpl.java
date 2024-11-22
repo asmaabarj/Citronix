@@ -1,5 +1,12 @@
 package com.projet.citronix.services.impl;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.projet.citronix.dtos.ArbreDTO;
 import com.projet.citronix.exceptions.ArbreException;
 import com.projet.citronix.mapper.ArbreMapper;
@@ -8,13 +15,9 @@ import com.projet.citronix.models.entities.Champ;
 import com.projet.citronix.repositories.ArbreRepository;
 import com.projet.citronix.repositories.ChampRepository;
 import com.projet.citronix.services.interfaces.ArbreService;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Calendar;
-import java.util.List;
 
 @Service
 @Slf4j
@@ -107,6 +110,12 @@ public class ArbreServiceImpl implements ArbreService {
 
     private void validerPeriodePlantation(ArbreDTO arbreDTO) {
         Calendar cal = Calendar.getInstance();
+        Date now = cal.getTime();
+        
+        if (arbreDTO.getDatePlantation().after(now)) {
+            throw new ArbreException.DatePlantationFutureException();
+        }
+        
         cal.setTime(arbreDTO.getDatePlantation());
         int moisPlantation = cal.get(Calendar.MONTH) + 1;
         
