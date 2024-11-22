@@ -46,13 +46,10 @@ public abstract class ArbreException extends RuntimeException {
             super("Le champ d'appartenance est obligatoire");
         }
     }
-<<<<<<< HEAD
-=======
 
     public static class DatePlantationFutureException extends ArbreException {
         public DatePlantationFutureException() {
             super("La date de plantation doit être dans le passé");
         }
     }
->>>>>>> CIT-31-en-tant-que-utilisateur-je-veux-gerer-les-recoltes-par-saison-pour-analyser-la-production-au-fil-du-temps
 }
