@@ -63,6 +63,26 @@ public class GlobalExceptionHandler {
         return createErrorResponse("Une erreur interne est survenue", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+    @ExceptionHandler(RecolteException.class)
+    public ResponseEntity<ErrorResponse> handleRecolteException(RecolteException ex) {
+        ErrorResponse error = new ErrorResponse(
+            HttpStatus.BAD_REQUEST.value(),
+            ex.getMessage(),
+            LocalDateTime.now()
+        );
+        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(DetailRecolteException.class)
+    public ResponseEntity<ErrorResponse> handleDetailRecolteException(DetailRecolteException ex) {
+        ErrorResponse error = new ErrorResponse(
+            HttpStatus.BAD_REQUEST.value(),
+            ex.getMessage(),
+            LocalDateTime.now()
+        );
+        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+    }
+
     private ResponseEntity<ErrorResponse> createErrorResponse(String message, HttpStatus status) {
         ErrorResponse error = new ErrorResponse(
             status.value(),

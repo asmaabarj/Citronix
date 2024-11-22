@@ -6,8 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
+import javax.validation.constraints.*;
 
 @Entity
 @Data
@@ -19,9 +18,7 @@ public class DetailRecolte {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull(message = "La quantité par arbre est obligatoire")
-    @Positive(message = "La quantité par arbre doit être positive")
-    private Double quantiteParArbre;
+    private Float quantiteParArbre;
 
     @ManyToOne
     @JoinColumn(name = "arbre_id", nullable = false)
@@ -30,4 +27,13 @@ public class DetailRecolte {
     @ManyToOne
     @JoinColumn(name = "recolte_id", nullable = false)
     private Recolte recolte;
+
+    @PrePersist
+    @PreUpdate
+    private void calculerQuantiteParArbre() {
+        if (arbre != null) {
+            this.quantiteParArbre = arbre.calculerProductivite();
+        }
+    }
 }
+

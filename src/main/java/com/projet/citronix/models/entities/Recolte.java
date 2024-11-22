@@ -4,15 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.projet.citronix.models.enums.Saison;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
+import javax.validation.constraints.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import com.projet.citronix.models.enums.Saison;
 
 @Entity
 @Data
@@ -28,15 +26,13 @@ public class Recolte {
     @Temporal(TemporalType.DATE)
     private Date dateRecolte;
 
-    @NotNull(message = "La quantité totale est obligatoire")
-    @Positive(message = "La quantité totale doit être positive")
     private Double quantiteTotale;
 
-    @NotNull(message = "La saison est obligatoire")
     @Enumerated(EnumType.STRING)
+    @NotNull(message = "La saison est obligatoire")
     private Saison saison;
 
-    @OneToMany(mappedBy = "recolte", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "recolte", cascade = CascadeType.ALL)
     @Builder.Default
     private List<DetailRecolte> details = new ArrayList<>();
 
