@@ -1,6 +1,11 @@
 package com.projet.citronix.exceptions;
 
-import lombok.extern.slf4j.Slf4j;
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.persistence.EntityNotFoundException;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -8,10 +13,9 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import javax.persistence.EntityNotFoundException;
-import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Map;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 
 @RestControllerAdvice
 @Slf4j
@@ -26,6 +30,12 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(ChampException.class)
     public ResponseEntity<ErrorResponse> handleChampException(ChampException ex) {
         log.error("Erreur Champ: {}", ex.getMessage());
+        return createErrorResponse(ex.getMessage(), HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(ArbreException.class)
+    public ResponseEntity<ErrorResponse> handleArbreException(ArbreException ex) {
+        log.error("Erreur Arbre: {}", ex.getMessage());
         return createErrorResponse(ex.getMessage(), HttpStatus.BAD_REQUEST);
     }
 
@@ -53,8 +63,40 @@ public class GlobalExceptionHandler {
         return createErrorResponse("Une erreur interne est survenue", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+    @ExceptionHandler(RecolteException.class)
+    public ResponseEntity<ErrorResponse> handleRecolteException(RecolteException ex) {
+        ErrorResponse error = new ErrorResponse(
+            HttpStatus.BAD_REQUEST.value(),
+            ex.getMessage(),
+            LocalDateTime.now()
+        );
+        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(DetailRecolteException.class)
+    public ResponseEntity<ErrorResponse> handleDetailRecolteException(DetailRecolteException ex) {
+        ErrorResponse error = new ErrorResponse(
+            HttpStatus.BAD_REQUEST.value(),
+            ex.getMessage(),
+            LocalDateTime.now()
+        );
+        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+    }
+
     private ResponseEntity<ErrorResponse> createErrorResponse(String message, HttpStatus status) {
-        ErrorResponse errorResponse = new ErrorResponse(status.name(), message, LocalDateTime.now());
-        return new ResponseEntity<>(errorResponse, status);
+        ErrorResponse error = new ErrorResponse(
+            status.value(),
+            message,
+            LocalDateTime.now()
+        );
+        return new ResponseEntity<>(error, status);
+    }
+
+    @Data
+    @AllArgsConstructor
+    public static class ErrorResponse {
+        private int status;
+        private String message;
+        private LocalDateTime timestamp;
     }
 } 
