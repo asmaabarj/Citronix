@@ -55,10 +55,14 @@ public class FermeController {
     }
 
     @GetMapping("/recherche")
-    public ResponseEntity<Page<FermeDTO>> rechercher(
-            @RequestParam Map<String, String> criteres,
-            Pageable pageable) {
+    public ResponseEntity<List<FermeDTO>> rechercher(@RequestParam Map<String, String> criteres) {
         log.info("Recherche des fermes avec critères: {}", criteres);
-        return ResponseEntity.ok(fermeService.rechercher(criteres, pageable));
+        return ResponseEntity.ok(fermeService.rechercher(criteres));
+    }
+
+    @GetMapping("/page")
+    public ResponseEntity<List<FermeDTO>> recupererToutAvecPagination(Pageable pageable) {
+        log.info("Récupération de toutes les fermes avec pagination");
+        return ResponseEntity.ok(fermeService.recupererTout(pageable));
     }
 }

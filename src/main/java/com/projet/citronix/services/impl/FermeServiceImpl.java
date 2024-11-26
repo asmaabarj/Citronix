@@ -110,7 +110,7 @@ public class FermeServiceImpl implements FermeService {
     }
 
     @Override
-    public Page<FermeDTO> rechercher(Map<String, String> criteres, Pageable pageable) {
+    public List<FermeDTO> rechercher(Map<String, String> criteres) {
         log.info("Recherche des fermes avec critères: {}", criteres);
         
         Specification<Ferme> spec = (root, query, cb) -> {
@@ -136,23 +136,14 @@ public class FermeServiceImpl implements FermeService {
             return cb.and(predicates.toArray(new Predicate[0]));
         };
         
-        Page<Ferme> fermePage = fermeRepository.findAll(spec, pageable);
-        return fermePage.map(fermeMapper::toDto);
+        List<Ferme> fermes = fermeRepository.findAll(spec);
+        return fermeMapper.toDtoList(fermes);
     }
 
-    private void validerSuperficie(FermeDTO fermeDTO) {
-        if (fermeDTO.getSuperficie() < 0.2) {
-            log.error("Superficie invalide: {}", fermeDTO.getSuperficie());
-            throw new FermeException.SuperficieInvalideException();
-        }
+    @Override
+    public List<FermeDTO> recupererTout(Pageable pageable) {
+        log.info("Récupération de toutes les fermes avec pagination");
+        return fermeMapper.toDtoList(fermeRepository.findAll(pageable).getContent());
     }
 
-    private void validerModificationSuperficie(Ferme ferme, Double nouvelleSuperficie) {
-        Double superficieTotaleChamps = ferme.getChamps().stream()
-                .mapToDouble(Champ::getSuperficie)
-                .sum();
-        if (superficieTotaleChamps >= nouvelleSuperficie) {
-            throw new FermeException.SuperficieInvalideException("La nouvelle superficie est inférieure à la superficie totale des champs");
-        }
-    }
 }

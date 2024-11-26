@@ -17,12 +17,6 @@ public abstract class ArbreException extends RuntimeException {
         }
     }
 
-    public static class ArbreNonProductifException extends ArbreException {
-        public ArbreNonProductifException() {
-            super("L'arbre a dépassé sa durée de vie productive (20 ans)");
-        }
-    }
-
     public static class ChampInexistantException extends ArbreException {
         public ChampInexistantException() {
             super("Le champ spécifié n'existe pas");
@@ -35,17 +29,8 @@ public abstract class ArbreException extends RuntimeException {
         }
     }
 
-    public static class DatePlantationRequiseException extends ArbreException {
-        public DatePlantationRequiseException() {
-            super("La date de plantation est obligatoire");
-        }
-    }
 
-    public static class ChampRequiredException extends ArbreException {
-        public ChampRequiredException() {
-            super("Le champ d'appartenance est obligatoire");
-        }
-    }
+
 
     public static class DatePlantationFutureException extends ArbreException {
         public DatePlantationFutureException() {

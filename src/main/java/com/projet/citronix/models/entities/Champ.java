@@ -24,7 +24,6 @@ public class Champ {
     private String nom;
 
     @NotNull(message = "La superficie est obligatoire")
-    @DecimalMin(value = "0.1", message = "La superficie doit être supérieure ou égale à 0.1 hectare")
     private Double superficie;
 
     @ManyToOne

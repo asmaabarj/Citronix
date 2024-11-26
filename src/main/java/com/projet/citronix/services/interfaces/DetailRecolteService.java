@@ -12,7 +12,5 @@ public interface DetailRecolteService {
     DetailRecolteDTO recupererParId(Long id);
     void supprimer(Long id);
     List<DetailRecolteDTO> recupererTout();
-    Page<DetailRecolteDTO> rechercher(Pageable pageable);
-    List<DetailRecolteDTO> recupererParRecolte(Long recolteId);
-    List<DetailRecolteDTO> recupererParArbre(Long arbreId);
+
 } 

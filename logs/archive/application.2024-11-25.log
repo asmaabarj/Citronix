@@ -1,0 +1,200 @@
+2024-11-25 10:10:00 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-25 10:10:00 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 10660 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
+2024-11-25 10:10:00 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
+2024-11-25 10:10:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-25 10:10:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-25 10:10:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 10:10:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 201 ms. Found 6 JPA repository interfaces.
+2024-11-25 10:10:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-11-25 10:10:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-11-25 10:10:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 10:10:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-11-25 10:10:03 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 10:10:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2867 ms
+2024-11-25 10:10:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-25 10:10:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-25 10:10:04 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
+2024-11-25 10:10:04 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25 10:10:04 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-11-25 10:10:04 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-25 10:10:04 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-25 10:10:06 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-25 10:10:06 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 10:10:07 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25 10:10:09 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-25 10:10:09 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-11-25 10:10:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-25 10:10:09 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 9.433 seconds (JVM running for 10.395)
+2024-11-25 10:11:10 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25 10:11:10 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-25 10:11:10 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-25 10:11:10 [http-nio-8088-exec-1] INFO  c.p.c.controllers.FermeController - Récupération de toutes les fermes
+2024-11-25 10:11:10 [http-nio-8088-exec-1] INFO  c.p.c.services.impl.FermeServiceImpl - Récupération de toutes les fermes
+2024-11-25 10:46:56 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m49s140ms629µs600ns).
+2024-11-25 11:10:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m56s890ms554µs699ns).
+2024-11-25 11:20:59 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m35s430ms161µs900ns).
+2024-11-25 11:49:37 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m37s724ms380µs801ns).
+2024-11-25 12:16:19 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m11s769ms326µs900ns).
+2024-11-25 13:47:52 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h26m32s740ms203µs800ns).
+2024-11-25 13:51:26 [http-nio-8088-exec-4] INFO  c.p.c.controllers.VenteController - Récupération de toutes les ventes
+2024-11-25 13:51:26 [http-nio-8088-exec-4] INFO  c.p.c.services.impl.VenteServiceImpl - Récupération de toutes les ventes
+2024-11-25 13:51:26 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-25 14:01:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 14:01:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-25 14:01:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-25 15:16:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-25 15:16:26 [restartedMain] INFO  c.p.citronix.CitronixApplication - Starting CitronixApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 24704 (C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix\target\classes started by ycode in C:\Users\ycode\eclipse-workspace\SoutenanceCroisé\citronix)
+2024-11-25 15:16:26 [restartedMain] INFO  c.p.citronix.CitronixApplication - The following 1 profile is active: "prod"
+2024-11-25 15:16:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-25 15:16:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-25 15:16:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 15:16:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98 ms. Found 6 JPA repository interfaces.
+2024-11-25 15:16:27 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-11-25 15:16:27 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-11-25 15:16:27 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 15:16:27 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-11-25 15:16:27 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 15:16:27 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1719 ms
+2024-11-25 15:16:28 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-25 15:16:28 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-25 15:16:28 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/citronix'
+2024-11-25 15:16:28 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25 15:16:28 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-11-25 15:16:28 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-25 15:16:28 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-25 15:16:29 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-25 15:16:29 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 15:16:30 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25 15:16:31 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-25 15:16:31 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-11-25 15:16:31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-25 15:16:31 [restartedMain] INFO  c.p.citronix.CitronixApplication - Started CitronixApplication in 5.971 seconds (JVM running for 6.833)
+2024-11-25 15:16:45 [http-nio-8088-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25 15:16:45 [http-nio-8088-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-25 15:16:45 [http-nio-8088-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-11-25 15:16:45 [http-nio-8088-exec-4] INFO  c.p.c.controllers.VenteController - Récupération de toutes les ventes
+2024-11-25 15:16:45 [http-nio-8088-exec-4] INFO  c.p.c.services.impl.VenteServiceImpl - Récupération de toutes les ventes
+2024-11-25 15:16:45 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-25 15:16:48 [http-nio-8088-exec-3] INFO  c.p.c.controllers.FermeController - Récupération de toutes les fermes
+2024-11-25 15:16:49 [http-nio-8088-exec-3] INFO  c.p.c.services.impl.FermeServiceImpl - Récupération de toutes les fermes
+2024-11-25 15:17:01 [http-nio-8088-exec-2] INFO  c.p.c.controllers.FermeController - Suppression de la ferme avec l'ID: 1
+2024-11-25 15:17:01 [http-nio-8088-exec-2] INFO  c.p.c.services.impl.FermeServiceImpl - Suppression ferme ID: 1
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [5]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [6]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [7]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [8]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [9]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [10]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [11]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [12]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-25 15:17:01 [http-nio-8088-exec-2] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme supprimée avec succès, ID: 1
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [5]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [6]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [7]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [8]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [9]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [10]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [11]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [12]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-25 15:17:02 [http-nio-8088-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-11-25 15:17:44 [http-nio-8088-exec-5] INFO  c.p.c.controllers.FermeController - Suppression de la ferme avec l'ID: 3
+2024-11-25 15:17:44 [http-nio-8088-exec-5] INFO  c.p.c.services.impl.FermeServiceImpl - Suppression ferme ID: 3
+2024-11-25 15:17:44 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-25 15:17:44 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-25 15:17:44 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-25 15:17:44 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [5]
+2024-11-25 15:17:44 [http-nio-8088-exec-5] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme supprimée avec succès, ID: 3
+2024-11-25 15:17:44 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [5]
+2024-11-25 15:17:44 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2024-11-25 15:47:21 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m23s134ms846µs400ns).
+2024-11-25 16:05:23 [http-nio-8088-exec-8] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-25 16:05:23 [http-nio-8088-exec-8] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-25 16:05:23 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:05:23 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:05:23 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:05:23 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:05:23 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Champ Sud]
+2024-11-25 16:05:23 [http-nio-8088-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DOUBLE] - [0.5]
+2024-11-25 16:05:23 [http-nio-8088-exec-8] INFO  c.p.c.services.impl.ChampServiceImpl - Champ créé avec succès - ID: 6
+2024-11-25 16:05:43 [http-nio-8088-exec-9] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-25 16:05:43 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-25 16:05:43 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:05:43 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:05:43 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:05:43 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:05:43 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Champ Sud]
+2024-11-25 16:05:43 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DOUBLE] - [0.44]
+2024-11-25 16:05:43 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.ChampServiceImpl - Champ créé avec succès - ID: 7
+2024-11-25 16:06:07 [http-nio-8088-exec-10] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-25 16:06:07 [http-nio-8088-exec-10] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-25 16:06:07 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:07 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:07 [http-nio-8088-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:07 [http-nio-8088-exec-10] ERROR c.p.c.e.GlobalExceptionHandler - Erreur Champ: La somme des superficies des champs doit être strictement inférieure à celle de la ferme
+2024-11-25 16:06:07 [http-nio-8088-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.projet.citronix.exceptions.ChampException$SuperficieTotaleException: La somme des superficies des champs doit être strictement inférieure à celle de la ferme]
+2024-11-25 16:06:15 [http-nio-8088-exec-4] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-25 16:06:15 [http-nio-8088-exec-4] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-25 16:06:15 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:15 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:15 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:15 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:15 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Champ Sud]
+2024-11-25 16:06:15 [http-nio-8088-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DOUBLE] - [0.4]
+2024-11-25 16:06:15 [http-nio-8088-exec-4] INFO  c.p.c.services.impl.ChampServiceImpl - Champ créé avec succès - ID: 8
+2024-11-25 16:06:22 [http-nio-8088-exec-3] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-25 16:06:22 [http-nio-8088-exec-3] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-25 16:06:22 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:22 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:22 [http-nio-8088-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:22 [http-nio-8088-exec-3] ERROR c.p.c.e.GlobalExceptionHandler - Erreur Champ: La somme des superficies des champs doit être strictement inférieure à celle de la ferme
+2024-11-25 16:06:22 [http-nio-8088-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.projet.citronix.exceptions.ChampException$SuperficieTotaleException: La somme des superficies des champs doit être strictement inférieure à celle de la ferme]
+2024-11-25 16:06:28 [http-nio-8088-exec-5] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-25 16:06:28 [http-nio-8088-exec-5] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-25 16:06:28 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:28 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:28 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:28 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:28 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Champ Sud]
+2024-11-25 16:06:28 [http-nio-8088-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [DOUBLE] - [0.4]
+2024-11-25 16:06:28 [http-nio-8088-exec-5] INFO  c.p.c.services.impl.ChampServiceImpl - Champ créé avec succès - ID: 9
+2024-11-25 16:06:51 [http-nio-8088-exec-6] INFO  c.p.c.controllers.FermeController - Modification de la ferme avec l'ID: 4
+2024-11-25 16:06:51 [http-nio-8088-exec-6] INFO  c.p.c.services.impl.FermeServiceImpl - Début modification ferme ID: 4
+2024-11-25 16:06:51 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:06:51 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Ma Ferme Modifiée]
+2024-11-25 16:06:51 [http-nio-8088-exec-6] INFO  c.p.c.services.impl.FermeServiceImpl - Ferme modifiée avec succès, ID: 4
+2024-11-25 16:06:51 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [DATE] - [Wed Mar 20 00:00:00 WET 2024]
+2024-11-25 16:06:51 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Toulouse]
+2024-11-25 16:06:51 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Ma Ferme Modifiée]
+2024-11-25 16:06:51 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [DOUBLE] - [0.2]
+2024-11-25 16:06:51 [http-nio-8088-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [BIGINT] - [4]
+2024-11-25 16:17:14 [http-nio-8088-exec-9] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-25 16:17:14 [http-nio-8088-exec-9] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-25 16:17:14 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:17:14 [http-nio-8088-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:17:14 [http-nio-8088-exec-9] ERROR c.p.c.e.GlobalExceptionHandler - Erreur Champ: La superficie du champ ne peut pas dépasser 50% de la superficie de la ferme
+2024-11-25 16:17:14 [http-nio-8088-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.projet.citronix.exceptions.ChampException$SuperficieMaximaleException: La superficie du champ ne peut pas dépasser 50% de la superficie de la ferme]
+2024-11-25 16:17:23 [http-nio-8088-exec-1] INFO  c.p.c.controllers.ChampController - Création d'un nouveau champ
+2024-11-25 16:17:23 [http-nio-8088-exec-1] INFO  c.p.c.services.impl.ChampServiceImpl - Création d'un nouveau champ
+2024-11-25 16:17:23 [http-nio-8088-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:17:23 [http-nio-8088-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:17:23 [http-nio-8088-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2024-11-25 16:17:23 [http-nio-8088-exec-1] ERROR c.p.c.e.GlobalExceptionHandler - Erreur Champ: La somme des superficies des champs doit être strictement inférieure à celle de la ferme
+2024-11-25 16:17:23 [http-nio-8088-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.projet.citronix.exceptions.ChampException$SuperficieTotaleException: La somme des superficies des champs doit être strictement inférieure à celle de la ferme]
+2024-11-25 16:30:58 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m6s241ms42µs500ns).
+2024-11-25 19:10:31 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h42m32s211ms584µs300ns).

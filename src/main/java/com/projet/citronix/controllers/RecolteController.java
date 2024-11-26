@@ -54,11 +54,6 @@ public class RecolteController {
         return ResponseEntity.ok(recolteService.recupererTout());
     }
 
-    @GetMapping("/recherche")
-    public ResponseEntity<Page<RecolteDTO>> rechercher(Pageable pageable) {
-        log.info("Recherche des récoltes avec pagination");
-        return ResponseEntity.ok(recolteService.rechercher(pageable));
-    }
 
     @GetMapping("/saison/{saison}")
     public ResponseEntity<List<RecolteDTO>> recupererParSaison(@PathVariable Saison saison) {
