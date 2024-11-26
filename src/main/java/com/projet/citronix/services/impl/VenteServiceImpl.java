@@ -97,7 +97,7 @@ public class VenteServiceImpl implements VenteService {
 
     private Recolte getRecolte(Long id) {
         return recolteRepository.findById(id)
-            .orElseThrow(() -> new VenteException("Récolte non trouvée"));
+                .orElseThrow(VenteException.VenteInexistanteException::new);
     }
 
     private void validerVente(VenteDTO venteDTO, Recolte recolte) {

@@ -37,4 +37,6 @@ public class Ferme {
     @OneToMany(mappedBy = "ferme", cascade = CascadeType.ALL)
     @Builder.Default
     private List<Champ> champs = new ArrayList<>();
+
+
 }
