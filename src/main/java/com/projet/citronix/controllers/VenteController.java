@@ -53,12 +53,6 @@ public class VenteController {
         return ResponseEntity.ok(venteService.recupererTout());
     }
 
-    @GetMapping("/recherche")
-    public ResponseEntity<Page<VenteDTO>> rechercher(Pageable pageable) {
-        log.info("Recherche des ventes avec pagination");
-        return ResponseEntity.ok(venteService.rechercher(pageable));
-    }
-
     @GetMapping("/recolte/{recolteId}")
     public ResponseEntity<List<VenteDTO>> recupererParRecolte(@PathVariable Long recolteId) {
         log.info("Récupération des ventes pour la récolte ID: {}", recolteId);

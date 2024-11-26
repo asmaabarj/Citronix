@@ -13,7 +13,6 @@ public interface RecolteService {
     RecolteDTO recupererParId(Long id);
     void supprimer(Long id);
     List<RecolteDTO> recupererTout();
-    Page<RecolteDTO> rechercher(Pageable pageable);
     List<RecolteDTO> recupererParSaison(Saison saison);
     void mettreAJourQuantiteTotale(Long recolteId);
 }

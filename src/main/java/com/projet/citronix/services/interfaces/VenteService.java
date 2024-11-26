@@ -12,6 +12,5 @@ public interface VenteService {
     VenteDTO recupererParId(Long id);
     void supprimer(Long id);
     List<VenteDTO> recupererTout();
-    Page<VenteDTO> rechercher(Pageable pageable);
     List<VenteDTO> recupererParRecolte(Long recolteId);
 }

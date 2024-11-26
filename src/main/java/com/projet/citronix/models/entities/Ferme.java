@@ -28,7 +28,6 @@ public class Ferme {
     private String localisation;
 
     @NotNull(message = "La superficie est obligatoire")
-    @DecimalMin(value = "0.2", message = "La superficie doit être supérieure ou égale à 0.2 hectares")
     private Double superficie;
 
     @NotNull(message = "La date de création est obligatoire")

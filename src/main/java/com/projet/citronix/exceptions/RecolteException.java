@@ -1,7 +1,7 @@
 package com.projet.citronix.exceptions;
 
 public class RecolteException extends RuntimeException {
-    public RecolteException(String message) {
+        public RecolteException(String message) {
         super(message);
     }
 
@@ -17,17 +17,6 @@ public class RecolteException extends RuntimeException {
         }
     }
 
-    public static class DateRecolteInvalideException extends RecolteException {
-        public DateRecolteInvalideException() {
-            super("La date de récolte est invalide");
-        }
-    }
-
-    public static class SaisonInvalideException extends RecolteException {
-        public SaisonInvalideException() {
-            super("La saison spécifiée est invalide");
-        }
-    }
 
     public static class SaisonDateIncompatibleException extends RecolteException {
         public SaisonDateIncompatibleException() {

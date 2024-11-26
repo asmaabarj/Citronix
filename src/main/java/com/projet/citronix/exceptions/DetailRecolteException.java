@@ -5,17 +5,7 @@ public class DetailRecolteException extends RuntimeException {
         super(message);
     }
 
-    public static class DetailRecolteExistantException extends DetailRecolteException {
-        public DetailRecolteExistantException() {
-            super("Un détail de récolte existe déjà pour cet arbre dans cette récolte");
-        }
-    }
 
-    public static class DetailRecolteInexistantException extends DetailRecolteException {
-        public DetailRecolteInexistantException() {
-            super("Détail de récolte non trouvé");
-        }
-    }
 
     public static class ArbreInexistantException extends DetailRecolteException {
         public ArbreInexistantException() {
@@ -23,17 +13,6 @@ public class DetailRecolteException extends RuntimeException {
         }
     }
 
-    public static class RecolteInexistanteException extends DetailRecolteException {
-        public RecolteInexistanteException() {
-            super("La récolte spécifiée n'existe pas");
-        }
-    }
-
-    public static class QuantiteInvalideException extends DetailRecolteException {
-        public QuantiteInvalideException() {
-            super("La quantité récoltée est invalide");
-        }
-    }
 
     public static class ArbreDejaRecolteException extends DetailRecolteException {
         public ArbreDejaRecolteException() {

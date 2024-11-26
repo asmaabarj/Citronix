@@ -97,23 +97,6 @@ public class DetailRecolteServiceImpl implements DetailRecolteService {
         return detailRecolteMapper.toDtoList(detailRecolteRepository.findAll());
     }
 
-    @Override
-    public Page<DetailRecolteDTO> rechercher(Pageable pageable) {
-        log.info("Recherche des détails de récolte avec pagination");
-        return detailRecolteRepository.findAll(pageable).map(detailRecolteMapper::toDto);
-    }
-
-    @Override
-    public List<DetailRecolteDTO> recupererParRecolte(Long recolteId) {
-        log.info("Récupération des détails pour la récolte ID: {}", recolteId);
-        return detailRecolteMapper.toDtoList(detailRecolteRepository.findByRecolteId(recolteId));
-    }
-
-    @Override
-    public List<DetailRecolteDTO> recupererParArbre(Long arbreId) {
-        log.info("Récupération des détails pour l'arbre ID: {}", arbreId);
-        return detailRecolteMapper.toDtoList(detailRecolteRepository.findByArbreId(arbreId));
-    }
 
     private DetailRecolte getDetailRecolte(Long id) {
         return detailRecolteRepository.findById(id)

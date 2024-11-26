@@ -5,7 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -20,7 +19,6 @@ public class ChampDTO {
     private String nom;
 
     @NotNull(message = "La superficie est obligatoire")
-    @DecimalMin(value = "0.1", message = "La superficie doit être supérieure ou égale à 0.1 hectare")
     private Double superficie;
 
     @NotNull(message = "L'ID de la ferme est obligatoire")

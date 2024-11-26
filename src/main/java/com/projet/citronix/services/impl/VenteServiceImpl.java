@@ -10,8 +10,7 @@ import com.projet.citronix.repositories.VenteRepository;
 import com.projet.citronix.services.interfaces.VenteService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -84,11 +83,6 @@ public class VenteServiceImpl implements VenteService {
         return venteMapper.toDtoList(venteRepository.findAll());
     }
 
-    @Override
-    public Page<VenteDTO> rechercher(Pageable pageable) {
-        log.info("Recherche des ventes avec pagination");
-        return venteRepository.findAll(pageable).map(venteMapper::toDto);
-    }
 
     @Override
     public List<VenteDTO> recupererParRecolte(Long recolteId) {

@@ -1,11 +1,11 @@
 package com.projet.citronix.services.interfaces;
 
-import com.projet.citronix.dtos.FermeDTO;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-
 import java.util.List;
 import java.util.Map;
+
+import org.springframework.data.domain.Pageable;
+
+import com.projet.citronix.dtos.FermeDTO;
 
 public interface FermeService {
     FermeDTO creer(FermeDTO fermeDTO);
@@ -13,5 +13,7 @@ public interface FermeService {
     FermeDTO recupererParId(Long id);
     void supprimer(Long id);
     List<FermeDTO> recupererTout();
-    Page<FermeDTO> rechercher(Map<String, String> criteres, Pageable pageable);
+    List<FermeDTO> rechercher(Map<String, String> criteres);
+    List<FermeDTO> recupererTout(Pageable pageable);
 }
+

@@ -57,19 +57,6 @@ public class RecolteServiceImpl implements RecolteService {
         }
     }
 
-    private void validerArbreNonRecolte(Long arbreId, Saison saison, Date dateRecolte) {
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(dateRecolte);
-        int anneeRecolte = cal.get(Calendar.YEAR);
-
-        boolean arbreDejaRecolte = detailRecolteRepository.existsByArbreIdAndRecolteSaisonAndAnnee(
-            arbreId, saison, anneeRecolte);
-
-        if (arbreDejaRecolte) {
-            throw new RecolteException.ArbreDejaRecolteException();
-        }
-    }
-
     @Override
     public RecolteDTO creer(RecolteDTO recolteDTO) {
         log.info("Création d'une nouvelle récolte pour la saison: {}", recolteDTO.getSaison());
@@ -134,11 +121,6 @@ public class RecolteServiceImpl implements RecolteService {
         return recolteMapper.toDtoList(recolteRepository.findAll());
     }
 
-    @Override
-    public Page<RecolteDTO> rechercher(Pageable pageable) {
-        log.info("Recherche des récoltes avec pagination");
-        return recolteRepository.findAll(pageable).map(recolteMapper::toDto);
-    }
 
     @Override
     public List<RecolteDTO> recupererParSaison(Saison saison) {

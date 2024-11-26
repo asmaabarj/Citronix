@@ -54,21 +54,4 @@ public class DetailRecolteController {
         return ResponseEntity.ok(detailRecolteService.recupererTout());
     }
 
-    @GetMapping("/recherche")
-    public ResponseEntity<Page<DetailRecolteDTO>> rechercher(Pageable pageable) {
-        log.info("Recherche des détails de récolte avec pagination");
-        return ResponseEntity.ok(detailRecolteService.rechercher(pageable));
-    }
-
-    @GetMapping("/recolte/{recolteId}")
-    public ResponseEntity<List<DetailRecolteDTO>> recupererParRecolte(@PathVariable Long recolteId) {
-        log.info("Récupération des détails pour la récolte ID: {}", recolteId);
-        return ResponseEntity.ok(detailRecolteService.recupererParRecolte(recolteId));
-    }
-
-    @GetMapping("/arbre/{arbreId}")
-    public ResponseEntity<List<DetailRecolteDTO>> recupererParArbre(@PathVariable Long arbreId) {
-        log.info("Récupération des détails pour l'arbre ID: {}", arbreId);
-        return ResponseEntity.ok(detailRecolteService.recupererParArbre(arbreId));
-    }
 } 
