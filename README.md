@@ -78,15 +78,20 @@ Citronix est une solution innovante conçue pour aider les fermiers à gérer ef
 Citronix/
 ├── src/
 │   ├── main/
-│   │   ├── controller/        # Gestion des requêtes REST
-│   │   ├── service/           # Logique métier
-│   │   ├── repository/        # Accès aux données
-│   │   ├── entity/            # Modèles de données
-│   │   ├── dto/               # Objets de transfert de données
-│   │   └── config/            # Configuration Spring Boot
-│   ├── test/                  # Tests unitaires
-│   └── resources/
-│       └── application.properties # Configuration de la base de données
+│   │   ├── java/
+│   │   │   ├── com/
+│   │   │   │   └── projet/
+│   │   │   │       └── citronix/
+│   │   │   │           ├── controllers/        # Gestion des requêtes REST
+│   │   │   │           ├── services/           # Logique métier
+│   │   │   │           ├── repositories/        # Accès aux données
+│   │   │   │           ├── models/              # Modèles de données
+│   │   │   │           ├── dtos/                # Objets de transfert de données
+│   │   │   │           ├── mapper/              # Mappers pour la conversion entre DTO et entités
+│   │   │   │           └── exceptions/           # Classes d'exception personnalisées
+│   │   ├── resources/
+│   │   │   └── application.properties            # Configuration de la base de données
+│   └── test/                  # Tests unitaires
 └── README.md
 ````
 ---
@@ -106,6 +111,11 @@ git clone https://github.com/asmaabarj/citronix.git
 ```bash
 mvn spring-boot:run
 ```
+---
+## 📋 Présentation 
+https://www.canva.com/design/DAGXkKYBgnk/sgHYxvdcHsrakx0uj42iag/edit
+
+---
 
 ## 📅 Planification sur Jira avec gitFlow
 https://asmaabarj5.atlassian.net/jira/software/projects/CIT/boards/298
